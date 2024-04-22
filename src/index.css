@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+html {
+  font-family:
+    Menlo,
+    Monaco,
+    Lucida Console,
+    "Courier New",
+    Courier,
+    monospace;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overscroll-behavior: none;
+
+  @apply bg-slate-50 dark:bg-slate-800;
+}

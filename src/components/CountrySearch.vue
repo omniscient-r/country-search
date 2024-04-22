@@ -1,7 +1,15 @@
 <script setup lang="ts">
   import { ref, defineAsyncComponent, onMounted } from "vue";
-  import DarkMode from "@/components/DarkMode.vue";
-  import PaginationComponent from "@/components/PaginationComponent.vue";
+  // import DarkMode from "@/components/DarkMode.vue";
+  // import PaginationComponent from "@/components/PaginationComponent.vue";
+
+  const DarkMode = defineAsyncComponent(() =>
+    import("@/components/DarkMode.vue")
+  );
+
+  const PaginationComponent = defineAsyncComponent(() =>
+    import("@/components/PaginationComponent.vue")
+  );
 
   const ModaComp = defineAsyncComponent(() =>
     import("@/components/ModalComponent.vue")
